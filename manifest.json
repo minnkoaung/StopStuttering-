@@ -1,0 +1,8 @@
+{
+  "name": "Stop Stuttering",
+  "short_name": "Stop Stuttering",
+  "lang": "en-US",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#01aef0"
+}

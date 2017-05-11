@@ -1,0 +1,26 @@
+CACHE:
+# IMAGES:
+ 
+
+#EXTERNAL
+https://fonts.googleapis.com/css?family=Arimo
+https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js
+
+####################################
+#STYLE SHEETS:
+css/bootstrap.min.css
+css/base_css.css
+css/responsive.css
+
+#####################################
+#JAVASCRIPT:
+js/bootstrap.js
+
+#EXTERNAL:
+http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js
+http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js
+
+FALLBACK:
+
+
+
