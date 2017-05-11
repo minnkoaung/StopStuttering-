@@ -178,3 +178,26 @@ body {
 .dt_name_cap {
     color: #0076be;
 }
+
+/*---------------------------------------------------------------------*/
+/*--------------------------- about ---------------------------------*/
+.about_page_info_container{
+    margin-bottom:20px;
+}
+.about_page_pic_sec{
+    padding: 0px;
+}
+.about_page_info_sec{
+    min-height: 825px;
+    margin-top: 10px;
+    background: #eeeeee;
+    padding: 16px;
+}
+.Consulting_Btn_Sec{
+    background: #eeeeee;
+    padding: 16px;
+}
+.consulting_btn{
+    width:65%;
+    text-align: center;
+}
