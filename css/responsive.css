@@ -1,6 +1,8 @@
 @media screen and (max-width: 320px) {
-    
+        
 }
+
+
 @media screen and (max-width: 360px) {
   .navbar-default .navbar-collapse,.navbar-default .navbar-collapse .collapse .in, .navbar-default .navbar-form{
         background: #transparent;
@@ -10,11 +12,26 @@
         margin: 10px 0px;
     }
     #bs-example-navbar-collapse-1{
-        background: #01aef0;
+        background: transparent;
         padding: 0px;
     }
+    .home_page_info_sec, .home_page_info_sec2{
+        padding: 20px;
+    }
+    .footer_info_text{
+            margin-bottom: 10px;
+    }
+    .social_wrapp{
+        margin-top: 10px;
+    }
+
+
+
 
 }
+
+
+
 @media screen and (min-width:375px) {
      .navbar-default .navbar-collapse,.navbar-default .navbar-collapse .collapse .in, .navbar-default .navbar-form{
         background: #transparent;
@@ -24,10 +41,16 @@
         margin: 10px 0px;
     }
     #bs-example-navbar-collapse-1{ 
-    background: #transparent;  
+    background: transparent;  
     padding: 0px;
     }
+     .home_page_info_sec, .home_page_info_sec2{
+        padding: 20px;
+    }
+
 }
+
+
 @media screen and (min-width:768px) {
 .navbar-default .navbar-nav>li>a{
     margin-left: 40px;
@@ -36,11 +59,73 @@
     background: transparent;  
     padding: 0px;
     }
+.home_page_info_sec, .home_page_info_sec2{
+        display: : none;
+    }
+.home_page_info_sec img{
+    display: block;
+    margin:0px auto;
 }
-@media screen and (min-width:1024px) {
+
+
+}
+
+
+/* (1366x768) WXGA Display */
+@media  screen and (max-width: 1366px) {
+   .navbar-default .navbar-nav>li>a{
+    margin-left: 10px;
+}
+.about_img{
+    width: 515px;
+    position: absolute;
+    top: 214px; right: 35px;
+    z-index: 9;
+}
+}
+
+
+/* (1280x1024) SXGA Display */
+@media  screen and (max-width: 1280px) {
+    .navbar-default .navbar-nav>li>a{
+    margin-left: 10px;
+}
+.about_img{
+    width: 515px;
+    position: absolute;
+    top: 214px; right: 115px;
+    z-index: 9;
+    border: 1px solid red;
+}
+}
+
+/* (1440x900) WXGA+ Display */
+@media  screen and (max-width: 1440px) {
+   @media  screen and (max-width: 1280px) {
+    .navbar-default .navbar-nav>li>a{
+    margin-left: 10px;
+}
+.about_img{
+    width: 515px;
+    position: absolute;
+    top: 214px; right: 115px;
+    z-index: 9;
+    border: 1px solid green;
+}
+}
+
+@media screen and (max-width:1024px) {
 .navbar-default .navbar-nav>li>a{
     margin-left: 10px;
 }
+.about_img{
+    width: 515px;
+    position: absolute;
+    top: 214px; right: 0px;
+    z-index: 9;
+}
+
+
  
 }
 
