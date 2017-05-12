@@ -2,18 +2,18 @@
     .navbar-default .navbar-collapse,
     .navbar-default .navbar-collapse .collapse .in,
     .navbar-default .navbar-form {
-        background: #transparent;
-        border: 0px !important;
+        background: transparent;
+        border: 0 !important;
     }
     .navbar-default .navbar-nav>li>a {
-        margin-left: 0px;
+        margin-left: 0;
     }
     .nav {
         margin-left: 16px;
     }
     #bs-example-navbar-collapse-1 {
         background: transparent;
-        padding: 0px;
+        padding: 0;
     }
     .home_page_info_sec,
     .home_page_info_sec2 {
@@ -25,24 +25,26 @@
     .social_wrapp {
         margin-top: 10px;
     }
+
+
 }
 
 @media(min-width:576px) {
     .navbar-default .navbar-collapse,
     .navbar-default .navbar-collapse .collapse .in,
     .navbar-default .navbar-form {
-        background: #transparent;
-        border: 0px !important;
+        background: transparent;
+        border: 0 !important;
     }
     .navbar-default .navbar-nav>li>a {
-        margin-left: 0px;
+        margin-left: 0;
     }
     .nav {
         margin-left: 16px;
     }
     #bs-example-navbar-collapse-1 {
         background: transparent;
-        padding: 0px;
+        padding: 0;
     }
     .home_page_info_sec,
     .home_page_info_sec2 {
@@ -62,15 +64,15 @@
     }
     #bs-example-navbar-collapse-1 {
         background: transparent;
-        padding: 0px;
+        padding: 0;
     }
     .home_page_info_sec,
     .home_page_info_sec2 {
-        display: : none;
+        display: none;
     }
     .home_page_info_sec img {
         display: block;
-        margin: 0px auto;
+        margin: 0 auto;
     }
 }
 
@@ -80,7 +82,7 @@
     }
     .about_img {
         display: block;
-        margin: 0px auto;
+        margin: 0 auto;
     }
 }
 
@@ -95,6 +97,16 @@
         right: 180px;
         z-index: 9;
     }
+    .info_content_container{
+        min-height: 600px;
+        position: absolute;
+        top: 0;
+        left:0px;
+        background: #f4f4f4;
+    }
+    .info_content_row{
+        padding:29px 75px;
+    }
 }
 
 @media(min-width:1920px) {
@@ -106,5 +118,15 @@
         top: 196px;
         right: 490px !important;
         z-index: 9;
+    }
+    .info_content_container{
+        min-height: 600px;
+        position: absolute;
+        top: 0;
+        left:366px;
+        background: #f4f4f4;
+    }
+    .info_content_row{
+        padding:29px 75px;
     }
 }

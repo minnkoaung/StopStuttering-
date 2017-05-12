@@ -3,8 +3,15 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
+.active{
+    color:#0072bc;
+}
 
 body {
+    font-family: 'Arimo', sans-serif;
+}
+p{
+    font-size: 16px;
     font-family: 'Arimo', sans-serif;
 }
 
@@ -20,7 +27,7 @@ body {
 .navbar {
     min-height: 125px;
     background: #fff;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     position: relative;
 }
 
@@ -35,7 +42,7 @@ body {
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
-    background: transparent;
+    /*background: transparent;*/
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -93,7 +100,7 @@ body {
 
 .Info_Circle_Pic {
     display: block;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 .home_page_info_sec2>* {
@@ -107,6 +114,9 @@ body {
     height: 350px;
     background: #3c3c3c;
     margin-top: 10px;
+}
+.footer_full_width_info {
+    margin-top: 0;
 }
 
 .footer_container {
@@ -140,7 +150,7 @@ body {
     padding: 15px;
     font-size: 17px;
     line-height: 17px;
-    text-transform: center;
+    text-transform: uppercase;
     border-radius: 30px;
     text-decoration: none;
 }
@@ -185,7 +195,7 @@ body {
     margin-bottom:20px;
 }
 .about_page_pic_sec{
-    padding: 0px;
+    padding: 0;
 }
 .about_page_info_sec{
     min-height: 825px;
@@ -200,4 +210,36 @@ body {
 .consulting_btn{
     width:65%;
     text-align: center;
+}
+
+/*---------------------------------------- infomation --------------------------------------*/
+.info_wrap{
+    position: relative;
+}
+.pw_bg{
+    min-height: 300px;
+    background-image: url("../images/info_BG-PW.png");
+    width: 871px;
+    height: 1px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+.wp_bg{
+    min-height: 300px;
+    background-image: url("../images/info_BG-WP.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.info_content_container{
+    min-height: 600px;
+    position: absolute;
+    top: 0;
+    left:366px;
+    background: #f4f4f4;
+}
+.info_content_row{
+    padding:29px 75px;
 }
