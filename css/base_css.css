@@ -243,7 +243,7 @@ p{
 .info_content_row{
     padding:29px 75px;
 }
-/*----------------------------  Consulting Page*/
+/*----------------------------  Consulting Page -------------------------------*/
 .consult_page_full_container .container{
     min-height: 900px;
 }
@@ -252,4 +252,9 @@ p{
 }
 .bg_grey{
     background: #f4f4f4;
+}
+
+/*-----------------------------------Contact -----------------------------------*/
+.map_dummy{
+    margin-top: 110px;
 }
