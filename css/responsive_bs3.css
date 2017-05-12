@@ -107,6 +107,11 @@
     .info_content_row{
         padding:29px 75px;
     }
+    .consult_pic{
+        width: 65%;
+        position:absolute;
+        bottom: 0px;right: -98px;
+    }
 }
 
 @media(min-width:1920px) {
@@ -128,5 +133,10 @@
     }
     .info_content_row{
         padding:29px 75px;
+    }
+    .consult_pic{
+        width: 65%;
+        position:absolute;
+        bottom: 0px;right: -375px;
     }
 }

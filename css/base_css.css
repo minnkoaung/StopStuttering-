@@ -243,3 +243,13 @@ p{
 .info_content_row{
     padding:29px 75px;
 }
+/*----------------------------  Consulting Page*/
+.consult_page_full_container .container{
+    min-height: 900px;
+}
+.bg_pink{
+    background:#f3e5e5 ;
+}
+.bg_grey{
+    background: #f4f4f4;
+}
