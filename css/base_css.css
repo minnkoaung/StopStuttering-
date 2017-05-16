@@ -1,260 +1,52 @@
 html,
-body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-.active{
-    color:#0072bc;
-}
-
-body {
-    font-family: 'Arimo', sans-serif;
-}
-p{
-    font-size: 16px;
-    font-family: 'Arimo', sans-serif;
-}
-
-.navbar-header {
-    position: relative;
-}
-
-.navbar-header .navbar-brand img {
-    z-index: 99999;
-    margin-top: 10px;
-}
-
-.navbar {
-    min-height: 125px;
-    background: #fff;
-    margin-bottom: 0;
-    position: relative;
-}
-
-.collapse {
-    margin-top: 45px;
-}
-
-.nav {
-    margin-left: 50px;
-}
-
+body{max-width:100%;overflow-x:hidden;}
+.active{color:#0072bc;}
+body{font-family:'Arimo', sans-serif;}
+p{font-size:16px;font-family:'Arimo', sans-serif;}
+.navbar-header{position:relative;}
+.navbar-header .navbar-brand img{z-index:99999;margin-top:10px;}
+.navbar{min-height:125px;background:#fff;margin-bottom:0;position:relative;}
+.collapse{margin-top:45px;}
+.nav{margin-left:50px;}
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover {
-    /*background: transparent;*/
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #000;
-    font-size: 18px;
-    margin-left: 50px;
-}
-
-
-/*----------------------------  Content Section Start -------------------------------*/
-
-.full-width-grey {
-    background: #eeeeee;
-}
-
-.home_page_info {
-    min-height: 589px;
-}
-
-.about_img {
-    position: absolute;
-    top: 196px;
-    right: 401px;
-    z-index: 9;
-}
-
-.home_page_info_sec {
-    background: #f4f4f4;
-    min-height: 589px;
-    padding: 80px 50px;
-}
-
-.home_page_info_sec2 {
-    background: #F4F4F4;
-    min-height: 572px;
-    padding-top: 150px;
-    margin-top: 18px;
-}
-
-.home_page_info_sec_3 {
-    min-height: 589px;
-    padding-top: 130px;
-    background: #F4F4F4;
-}
-
-.about_DT {
-    line-height: 25px;
-}
-
-.home_page_info_sec_grey {
-    background: #eeeeee;
-    height: 580px;
-    margin-top: 6px;
-}
-
-.Info_Circle_Pic {
-    display: block;
-    margin: 0 auto;
-}
-
-.home_page_info_sec2>* {
-    padding: 16px;
-}
-
-
-/*-------------------------footer---------------------*/
-
-.footer_full_width {
-    height: 350px;
-    background: #3c3c3c;
-    margin-top: 10px;
-}
-.footer_full_width_info {
-    margin-top: 0;
-}
-
-.footer_container {
-    margin-top: 50px;
-}
-
+.navbar-default .navbar-nav>.active>a:hover{}
+.navbar-default .navbar-nav>li>a{color:#000;font-size:18px;margin-left:50px;}
+.full-width-grey{background:#eeeeee;}
+.home_page_info{min-height:589px;}
+.about_img{position:absolute;top:196px;right:401px;z-index:9;}
+.home_page_info_sec{background:#f4f4f4;min-height:589px;padding:80px 50px;}
+.home_page_info_sec2{background:#F4F4F4;min-height:572px;padding-top:150px;margin-top:18px;}
+.home_page_info_sec_3{min-height:589px;padding-top:130px;background:#F4F4F4;}
+.about_DT{line-height:25px;}
+.home_page_info_sec_grey{background:#eeeeee;height:580px;margin-top:6px;}
+.Info_Circle_Pic{display:block;margin:0 auto;}
+.home_page_info_sec2>*{padding:16px;}
+.footer_full_width{height:350px;background:#3c3c3c;margin-top:10px;}
+.footer_full_width_info{margin-top:0;}
+.footer_container{margin-top:50px;}
 .footer_info_name,
-.footer_info_text {
-    color: #e4e4e4;
-}
-
-.social_wrapp>a img {
-    transition: transform linear 0.2s;
-}
-
-.social_wrapp a img:hover {
-    -ms-transform: rotate(360deg);
-    /* IE 9 */
-    -webkit-transform: rotate(360deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(360deg);
-}
-
-
-/*------------------- mybtn -----------------*/
-
-.mybtn {
-    display: inline-block;
-    background: #eaeaea;
-    height: 50px;
-    padding: 15px;
-    font-size: 17px;
-    line-height: 17px;
-    text-transform: uppercase;
-    border-radius: 30px;
-    text-decoration: none;
-}
-
-.mybtn_success {
-    background: #6cb333;
-    color: #fff;
-    transition: all ease-in 0.3s;
-}
-
-.mybtn_success_invert {
-    background: #fff;
-    border: 1px solid #6cb333;
-    color: #6cb333;
-    transition: all ease-in 0.3s;
-}
-
-.mybtn:hover {
-    text-decoration: none;
-}
-
-.mybtn_success:hover {
-    background: #569325;
-    color: #fff;
-}
-
-.mybtn_success_invert:hover {
-    background: #6cb333;
-    color: #fff;
-}
-
-
-/*-------------------------- header , praa, text ---------------*/
-
-.dt_name_cap {
-    color: #0076be;
-}
-
-/*---------------------------------------------------------------------*/
-/*--------------------------- about ---------------------------------*/
-.about_page_info_container{
-    margin-bottom:20px;
-}
-.about_page_pic_sec{
-    padding: 0;
-}
-.about_page_info_sec{
-    min-height: 825px;
-    margin-top: 10px;
-    background: #eeeeee;
-    padding: 16px;
-}
-.Consulting_Btn_Sec{
-    background: #eeeeee;
-    padding: 16px;
-}
-.consulting_btn{
-    width:65%;
-    text-align: center;
-}
-
-/*---------------------------------------- infomation --------------------------------------*/
-.info_wrap{
-    position: relative;
-}
-.pw_bg{
-    min-height: 300px;
-    background-image: url("../images/info_BG-PW.png");
-    width: 871px;
-    height: 1px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat-y;
-}
-.wp_bg{
-    min-height: 300px;
-    background-image: url("../images/info_BG-WP.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat-y;
-}
-
-.info_content_container{
-    min-height: 600px;
-    position: absolute;
-    top: 0;
-    left:366px;
-    background: #f4f4f4;
-}
-.info_content_row{
-    padding:29px 75px;
-}
-/*----------------------------  Consulting Page -------------------------------*/
-.consult_page_full_container .container{
-    min-height: 900px;
-}
-.bg_pink{
-    background:#f3e5e5 ;
-}
-.bg_grey{
-    background: #f4f4f4;
-}
-
-/*-----------------------------------Contact -----------------------------------*/
-.map_dummy{
-    margin-top: 110px;
-}
+.footer_info_text{color:#e4e4e4;}
+.social_wrapp>a img{transition:transform linear 0.2s;}
+.social_wrapp a img:hover{-ms-transform:rotate(360deg);-webkit-transform:rotate(360deg);transform:rotate(360deg);}
+.mybtn{display:inline-block;background:#eaeaea;height:50px;padding:15px;font-size:17px;line-height:17px;text-transform:uppercase;border-radius:30px;text-decoration:none;}
+.mybtn_success{background:#6cb333;color:#fff;transition:all ease-in 0.3s;}
+.mybtn_success_invert{background:#fff;border:1px solid #6cb333;color:#6cb333;transition:all ease-in 0.3s;}
+.mybtn:hover{text-decoration:none;}
+.mybtn_success:hover{background:#569325;color:#fff;}
+.mybtn_success_invert:hover{background:#6cb333;color:#fff;}
+.dt_name_cap{color:#0076be;}
+.about_page_info_container{margin-bottom:20px;}
+.about_page_pic_sec{padding:0;}
+.about_page_info_sec{min-height:825px;margin-top:10px;background:#eeeeee;padding:16px;}
+.Consulting_Btn_Sec{background:#eeeeee;padding:16px;}
+.consulting_btn{width:65%;text-align:center;}
+.info_wrap{position:relative;}
+.pw_bg{min-height:300px;background-image:url("../images/info_BG-PW.png");width:871px;height:1px;background-position:center;background-size:cover;background-repeat:repeat-y;}
+.wp_bg{min-height:300px;background-image:url("../images/info_BG-WP.png");background-position:center;background-size:cover;background-repeat:repeat-y;}
+.info_content_container{min-height:600px;position:absolute;top:0;left:366px;background:#f4f4f4;}
+.info_content_row{padding:29px 75px;}
+.consult_page_full_container .container{min-height:900px;}
+.bg_pink{background:#f3e5e5;}
+.bg_grey{background:#f4f4f4;}
+.map_dummy{margin-top:110px;}

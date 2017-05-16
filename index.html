@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="manifest.appcache">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -10,6 +10,10 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
+    <link rel="preload" href="css/base_css.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="css/responsive_bs3.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="path/to/mystylesheet.css"></noscript>
+
     <link href="css/base_css.css" rel="stylesheet">
     <link rel="stylesheet" href="bower_components/animate.css/animate.css">
     <!-- responsive CSS -->
@@ -28,6 +32,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="msapplication-starturl" content="/index.html">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -58,7 +64,7 @@
                     <li><a href="about.html">About Darren</a></li>
                     <li><a href="consulting.html">Consulting</a></li>
                     <li><a href="infomation.html">Infomation</a></li>
-                    <li ><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -77,7 +83,9 @@
                     <img src="images/Home_Page_Info_Pic.jpg" alt="Darren Teo" class=" img-responsive hidden-lg">
                     <hr>
                     <p class="about_DT text-justify">
-                        I am Darren and I help people who stutter. I adopt a multi-pronged approach in the sessions. I teach simple and practical techniques to help reduce stutter immediately, so that you can cope with everyday situations. At the same time, we will embark on a transformation therapy programme to change habitual patterns of thought and eradiate stutter. I am in Singapore but I offer consultations worldwide via Skype. I am happy to travel for full day consultancy or workshops. I believe I can help.
+                        I am Darren and I help people who stutter. I adopt a multi-pronged approach in the sessions. I teach simple and practical techniques to help reduce stutter immediately, so that you can cope with everyday situations. At the same time, we will embark on
+                        a transformation therapy programme to change habitual patterns of thought and eradiate stutter. I am in Singapore but I offer consultations worldwide via Skype. I am happy to travel for full day consultancy or workshops. I believe
+                        I can help.
                     </p>
                     <a href="" class="mybtn mybtn_success">Contact Darren</a>
                 </div>
@@ -158,6 +166,85 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+        (function(w) {
+            "use strict";
+            /* exported loadCSS */
+            var loadCSS = function(href, before, media) {
+                // Arguments explained:
+                // `href` [REQUIRED] is the URL for your CSS file.
+                // `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+                // By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+                // `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+                var doc = w.document;
+                var ss = doc.createElement("link");
+                var ref;
+                if (before) {
+                    ref = before;
+                } else {
+                    var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+                    ref = refs[refs.length - 1];
+                }
+
+                var sheets = doc.styleSheets;
+                ss.rel = "stylesheet";
+                ss.href = href;
+                // temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+                ss.media = "only x";
+
+                // wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+                function ready(cb) {
+                    if (doc.body) {
+                        return cb();
+                    }
+                    setTimeout(function() {
+                        ready(cb);
+                    });
+                }
+                // Inject link
+                // Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+                // Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+                ready(function() {
+                    ref.parentNode.insertBefore(ss, (before ? ref : ref.nextSibling));
+                });
+                // A method (exposed on return object for external use) that mimics onload by polling document.styleSheets until it includes the new sheet.
+                var onloadcssdefined = function(cb) {
+                    var resolvedHref = ss.href;
+                    var i = sheets.length;
+                    while (i--) {
+                        if (sheets[i].href === resolvedHref) {
+                            return cb();
+                        }
+                    }
+                    setTimeout(function() {
+                        onloadcssdefined(cb);
+                    });
+                };
+
+                function loadCB() {
+                    if (ss.addEventListener) {
+                        ss.removeEventListener("load", loadCB);
+                    }
+                    ss.media = media || "all";
+                }
+
+                // once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+                if (ss.addEventListener) {
+                    ss.addEventListener("load", loadCB);
+                }
+                ss.onloadcssdefined = onloadcssdefined;
+                onloadcssdefined(loadCB);
+                return ss;
+            };
+            // commonjs
+            if (typeof exports !== "undefined") {
+                exports.loadCSS = loadCSS;
+            } else {
+                w.loadCSS = loadCSS;
+            }
+        }(typeof global !== "undefined" ? global : this));
+    </script>
 </body>
 
 </html>
